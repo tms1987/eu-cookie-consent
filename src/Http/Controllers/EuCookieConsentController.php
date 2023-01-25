@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\Cookie;
 use the42coders\EuCookieConsent\EuCookieConsent;
+use Illuminate\Support\Facades\App;
 
 class EuCookieConsentController extends Controller
 {
