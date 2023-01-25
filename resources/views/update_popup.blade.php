@@ -11,8 +11,10 @@
                 console.log('The request failed!');
             }
         }
+        var data = new FormData();
+        data.append("l", "{{session('language')}}");
         xhr.open('POST', '{{ route('updateCookie') }}');
-        xhr.send();
+        xhr.send(data);
     }
     function euCookieConsentSetCheckboxesByClassName(classname) {
         checkboxes = document.getElementsByClassName('eu-cookie-consent-cookie');

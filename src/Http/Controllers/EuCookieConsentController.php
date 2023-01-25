@@ -22,6 +22,7 @@ class EuCookieConsentController extends Controller
 
     public function getUpdatePopup(Request $request)
     {
+        App::setLocale($request->input('l'));
         return EuCookieConsent::getPopup(true);
     }
 }
